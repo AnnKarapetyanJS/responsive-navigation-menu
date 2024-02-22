@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+nav {
+    background-color: rgb(80, 38, 101);
+    padding: 25px;
+    text-align: left;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
